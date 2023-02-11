@@ -1,6 +1,5 @@
-#!/usr?bin?python
+#!/usr/bin/python3
 ''' FileStorage module '''
-
 import json
 from models.base_model import BaseModel
 import models
@@ -11,13 +10,14 @@ from models.city import City
 from models.amenity import Amenity
 from models.review import Review
 
+
 class FileStorage:
     '''FileStorage class'''
 
     __file_path = 'file.json'
     __objects = {}
 
-    def all(sef):
+    def all(self):
         '''
         Return:
         the dictionary __objects
